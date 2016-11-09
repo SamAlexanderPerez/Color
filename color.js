@@ -44,7 +44,7 @@ Color.blueIntensity = function(rgb){
 
 //brightness
 Color.brightness = function(rgb){
-  let bright = 
+  let bright = (Color.redIntensity+Color.greenIntensity+Color.blueIntensity)/3;
   return bright;
 };
 
@@ -52,6 +52,13 @@ Color.brightness = function(rgb){
 Color.complement = function(rgb){
   let comp = [];
   for(var c=0;c<3;c++){
-    if()
+    if(c<255){
+      var temp = 255-c;
+      var complement = c+temp;
+      comp.push[c];
+    }
+    else{
+      comp.push[c];
+    }
   }
 }
